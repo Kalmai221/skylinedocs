@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Skyline Tech Projects{% endblock %}
+
+{% set shownews = True %}
+
+{% block content %}
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to Skyline Tech Projects</h1>
+        <p class="lead">Explore our portfolio of innovative projects and solutions.</p>
+        <p>Get started by clicking the button below.</p>
+        <a class="btn btn-primary btn-lg" href="/documentation">View Projects</a>
+    </div>
+
+    {% if shownews %}
+        <div class="container mt-5">
+            <div class="card">
+                <div class="card-header">
+                    {{ card_header }}
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ card_title }}</h5>
+                    <p class="card-text">{{ card_text }}</p>
+                    <a href="{{ card_link }}" class="btn btn-primary">{{ card_button_text }}</a>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About Skyline Tech</h2>
+                <p>Skyline Tech is a cutting-edge technology company that specializes in creating innovative solutions.</p>
+                <p>Our projects are driven by a passion for excellence and a commitment to pushing the boundaries of what's possible.</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Our Mission</h2>
+                <p>Our mission is to elevate technology to new heights and deliver solutions that transform industries.</p>
+                <p>Explore our portfolio to witness the future of innovation.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
