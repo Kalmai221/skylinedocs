@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Documentation{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1 class="display-4 text-center">Documentation</h1>
+        <p class="lead text-center">Select a product or project to explore its documentation.</p>
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/app-icons/1103753772720722052/58387049a0b7f2cfcbbe8258631c5182.png?size=256" class="card-img-top" alt="Project 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Flume</h5>
+                        <p class="card-text">A Multi-Purpose Discord Bot for your server!</p>
+                        <a href="/project1-documentation" class="btn btn-primary">View Documentation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

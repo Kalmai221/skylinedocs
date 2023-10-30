@@ -2,21 +2,19 @@
 
 {% block title %}Home - Skyline Tech Projects{% endblock %}
 
-{% set shownews = True %}
-
 {% block content %}
     <div class="jumbotron text-center">
-        <h1 class="display-4">Welcome to Skyline Tech Projects</h1>
-        <p class="lead">Explore our portfolio of innovative projects and solutions.</p>
+        <h1 class="display-4">Welcome to Skyline Tech Docs</h1>
+        <p class="lead">Explore our display of innovative projects and solutions.</p>
         <p>Get started by clicking the button below.</p>
-        <a class="btn btn-primary btn-lg" href="/documentation">View Projects</a>
+        <a class="btn btn-primary btn-lg" href="/docs">View Documentation</a>
     </div>
 
     {% if shownews %}
         <div class="container mt-5">
             <div class="card">
                 <div class="card-header">
-                    {{ card_header }}
+                    {{ card_header }} - {{ card_time }}
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">{{ card_title }}</h5>

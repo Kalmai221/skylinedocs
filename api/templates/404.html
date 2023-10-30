@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}404 - Page Not Found{% endblock %}
+
+{% block content %}
+    <div class="container text-center">
+        <div class="error-icon">
+            <i class="fas fa-exclamation-triangle fa-5x text-warning"></i>
+        </div>
+        <h1 class="display-4">Oops, It's a 404!</h1>
+        <p class="lead">Looks like you've stumbled upon an uncharted territory.</p>
+        <p>Don't worry, even the greatest explorers took wrong turns.</p>
+        <p>Let's navigate back to <a href="/">the safety of the homepage</a>.</p>
+    </div>
+    <style>
+        .error-icon {
+            margin: 20px 0;
+        }
+    </style>
+{% endblock %}
