@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Flume Documentation{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1 class="display-4 text-center">Flume Documentation</h1>
+        <p class="lead text-center">Welcome to the documentation for Flume - A Multi-Purpose Discord Bot.</p>
+        
+        <!-- Getting Started -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Getting Started</h5>
+                <p class="card-text">Learn how to set up and configure Flume for your Discord server. This section covers installation, authentication, and basic configuration steps to get you started with Flume.</p>
+                <!-- Add your "Getting Started" content here -->
+            </div>
+        </div>
+        
+        <!-- Command Categories -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class "card-title">Command Categories</h5>
+                <p class="card-text">Explore Flume's command categories to manage your Discord server effectively. Click below to view commands in each category.</p>
+                <a href="/flume/commands/category1" class="btn btn-primary">Category 1</a>
+                <a href="/flume/commands/category2" class="btn btn-primary">Category 2</a>
+                <a href="/flume/commands/category3" class="btn btn-primary">Category 3</a>
+                <!-- Add more category buttons as needed -->
+            </div>
+        </div>
+        
+        <!-- FAQ -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">FAQ and Troubleshooting</h5>
+                <p class="card-text">Find answers to frequently asked questions and troubleshooting tips related to Flume. This section is your resource for resolving common issues and getting the most out of Flume.</p>
+                <!-- Example Question -->
+                <h6 class="card-subtitle mb-2 text-muted">Q: Why is Flume Offline?</h6>
+                <p class="card-text">Flume can be offline for loads of reasons but these are the most common ones:<br>
+                1. Code Update Failing.<br>
+                2. Bot Hosting Server going down.<br>
+                <!-- Add more FAQ questions and answers as needed -->
+            </div>
+        </div>
+    </div>
+{% endblock %}
